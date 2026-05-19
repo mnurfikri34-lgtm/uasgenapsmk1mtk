@@ -105,6 +105,9 @@ async function login(){
             if(sessionLogin === currentSession){
 
                 alert("Akun sudah digunakan!");
+                document.getElementById("kode").value = "";
+
+document.getElementById("token").value = "";
 
                 return;
             }
@@ -132,6 +135,9 @@ async function login(){
             }
 
             alert("Login berhasil!");
+            document.getElementById("kode").value = "";
+
+document.getElementById("token").value = "";
 
             window.location.href = siswa.link;
 
@@ -140,6 +146,9 @@ async function login(){
     }
 
     alert("Kode atau token salah!");
+    document.getElementById("kode").value = "";
+
+document.getElementById("token").value = "";
 }
 function startCountdown(duration){
 
