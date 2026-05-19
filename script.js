@@ -185,4 +185,17 @@ function startCountdown(duration){
         }
 
     },1000);
+    window.onpageshow = function(event){
+
+    if(event.persisted){
+
+        location.reload();
+    }
+};
+    history.pushState(null,null,location.href);
+
+window.onpopstate = function(){
+
+    history.go(1);
+};
 }
