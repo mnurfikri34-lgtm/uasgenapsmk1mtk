@@ -134,7 +134,7 @@ document.getElementById("token").value = "";
                 console.log(error);
             }
 
-            alert("Login berhasil!");
+            alert("Login Berhasil!, Peserta hanya dapat login: 1 kali dalam 1 sesi ujian");
             document.getElementById("kode").value = "";
 
 document.getElementById("token").value = "";
